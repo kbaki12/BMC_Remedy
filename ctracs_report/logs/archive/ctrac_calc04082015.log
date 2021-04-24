@@ -1,0 +1,155 @@
+ACode:AC03840
+Process started on: 04082015 At:113842
+****************************************************
+Parameters Passed: activity ALL 2014 baki ...
+Inserting Calculated data in to TMP_CTRAC_CALCULATION table..
+Enter password: 
+
+3745 rows deleted.
+
+
+Commit complete.
+
+old   4: &1 AS RPTY,
+new   4: 2014 AS RPTY,
+old  11: WHEN (&1 = (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')))
+new  11: WHEN (2014 = (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')))
+old  16: WHEN (&1 > (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')))
+new  16: WHEN (2014 > (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')))
+old  21: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'Q') = 1) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')) = &1
+new  21: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'Q') = 1) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')) = 2014
+old  26: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'Q') = 2) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')) = &1
+new  26: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'Q') = 2) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')) = 2014
+old  31: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'Q') = 3) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')) = &1
+new  31: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'Q') = 3) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')) = 2014
+old  36: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'Q') = 4) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')) = &1
+new  36: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'Q') = 4) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Date_Received_by_Company/( 60 * 60 * 24 )),'YYYY')) = 2014
+old  42: WHEN (&1 = (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')))
+new  42: WHEN (2014 = (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')))
+old  47: WHEN (&1 > (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')))
+new  47: WHEN (2014 > (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')))
+old  52: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1
+new  52: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014
+old  57: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1
+new  57: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014
+old  62: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1
+new  62: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014
+old  67: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1
+new  67: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014
+old  72: WHEN (Complaint_Justified_ = 0 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1)
+new  72: WHEN (Complaint_Justified_ = 0 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1)
+old  77: WHEN (Complaint_Justified_ = 1 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1)
+new  77: WHEN (Complaint_Justified_ = 1 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1)
+old  82: WHEN (Complaint_Justified_ = 2 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1)
+new  82: WHEN (Complaint_Justified_ = 2 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1)
+old  87: WHEN (Complaint_Justified_ = 0 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2)
+new  87: WHEN (Complaint_Justified_ = 0 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2)
+old  92: WHEN (Complaint_Justified_ = 1 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2)
+new  92: WHEN (Complaint_Justified_ = 1 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2)
+old  97: WHEN (Complaint_Justified_ = 2 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2)
+new  97: WHEN (Complaint_Justified_ = 2 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2)
+old 102: WHEN (Complaint_Justified_ = 0 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3)
+new 102: WHEN (Complaint_Justified_ = 0 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3)
+old 107: WHEN (Complaint_Justified_ = 1 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3)
+new 107: WHEN (Complaint_Justified_ = 1 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3)
+old 112: WHEN (Complaint_Justified_ = 2 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3)
+new 112: WHEN (Complaint_Justified_ = 2 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3)
+old 117: WHEN (Complaint_Justified_ = 0 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4)
+new 117: WHEN (Complaint_Justified_ = 0 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4)
+old 122: WHEN (Complaint_Justified_ = 1 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4)
+new 122: WHEN (Complaint_Justified_ = 1 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4)
+old 127: WHEN (Complaint_Justified_ = 2 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = &1) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4)
+new 127: WHEN (Complaint_Justified_ = 2 And ((TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = 2014) And TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4)
+old 141: WHEN ((&1 - 1) = (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')))
+new 141: WHEN ((2014 - 1) = (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')))
+old 146: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = (&1 - 1)
+new 146: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 1) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = (2014 - 1)
+old 151: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = (&1 - 1)
+new 151: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 2) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = (2014 - 1)
+old 156: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = (&1 - 1)
+new 156: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 3) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = (2014 - 1)
+old 161: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = (&1 - 1)
+new 161: WHEN (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'Q') = 4) And (TO_CHAR(TO_DATE('01/01/1970','MM/DD/YYYY')+(Response_Sent/( 60 * 60 * 24 )),'YYYY')) = (2014 - 1)
+
+3745 rows created.
+
+
+Commit complete.
+
+Run Type is activity.
+Loading ctracs_activity_total_comp.sql
+Enter password: 
+
+132 rows deleted.
+
+
+Commit complete.
+
+
+26 rows created.
+
+Loading ctracs_activity_function.sql
+Enter password: 
+
+65 rows created.
+
+Loading ctracs_activity_function_total.sql
+Enter password: 
+
+11 rows created.
+
+Loading ctracs_activity_business.sql
+Enter password: 
+
+21 rows created.
+
+Loading ctracs_activity_unit.sql
+Enter password: 
+
+4 rows created.
+
+Loading ctracs_activity_total.sql
+Enter password: 
+old  38: '&1'||'T' AS Report
+new  38: '5'||'T' AS Report
+old  47: '&1'||'T'
+new  47: '5'||'T'
+
+1 row created.
+
+Enter password: 
+old  38: '&1'||'T' AS Report
+new  38: '4'||'T' AS Report
+old  47: '&1'||'T'
+new  47: '4'||'T'
+
+1 row created.
+
+Enter password: 
+old  38: '&1'||'T' AS Report
+new  38: '3'||'T' AS Report
+old  47: '&1'||'T'
+new  47: '3'||'T'
+
+1 row created.
+
+Enter password: 
+old  38: '&1'||'T' AS Report
+new  38: '2'||'T' AS Report
+old  47: '&1'||'T'
+new  47: '2'||'T'
+
+1 row created.
+
+Enter password: 
+old  38: '&1'||'T' AS Report
+new  38: '1'||'T' AS Report
+old  47: '&1'||'T'
+new  47: '1'||'T'
+
+1 row created.
+
+Generating CTRAC Activity Report.
+Enter password: 
+Sending report to email alias.
+Process Finished ...

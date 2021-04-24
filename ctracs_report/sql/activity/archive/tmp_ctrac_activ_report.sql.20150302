@@ -1,0 +1,67 @@
+rem     **************************************************************
+rem     * tmp_ctrac_activ_report.sql 
+rem     * Khal Baki
+rem     * Date: 01/29/2015
+rem     *-------------------------------------------------------------
+rem     * Generates the CTRAC Activity Report. 
+rem     *
+rem     *-------------------------------------------------------------
+rem     * Modified :
+rem     *
+rem     ***************************************************************
+
+set termout off
+set echo off
+set verify off
+set newpage none
+set space 0
+set pagesize 1000
+set heading on
+set feedback off
+set trimspool on
+set linesize 4000
+set colsep ','
+set underline off
+
+spool &1
+
+column REPORTED_COMPLAINT_FUNCTION heading "REPORTED_COMPLAINT_FUNCTION" Format a30
+
+Select * From TMP_CTRAC_COMPANY
+Order By COMPANY_, REPORTED_COMPLAINT_FUNCTION
+/
+
+spool off
+
+spool &1 append
+set heading off
+
+column REPORTED_COMPLAINT_FUNCTION Format a30
+
+Select * From tmp_ctrac_total_comp 
+Order By COMPANY_, REPORTED_COMPLAINT_FUNCTION
+/
+
+spool off
+
+spool &1 append
+set heading off
+
+column REPORTED_COMPLAINT_FUNCTION Format a30
+
+Select * From TMP_CTRAC_FUNCTION
+Order By COMPANY_, REPORTED_COMPLAINT_FUNCTION
+/
+
+spool off
+
+spool &1 append
+set heading off
+
+column REPORTED_COMPLAINT_FUNCTION Format a30
+
+Select * From TMP_CTRAC_TOTAL
+Order By COMPANY_, REPORTED_COMPLAINT_FUNCTION
+/
+
+spool off
